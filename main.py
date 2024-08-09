@@ -151,7 +151,7 @@ async def terminate():
         
         # Ensure the video capture is properly released
         video_capture.release()
-        cv2.destroyAllWindows()
+        #cv2.destroyAllWindows()
         
         # Return a success response
         return JSONResponse(content={"success": True})
