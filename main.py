@@ -17,7 +17,9 @@ eye_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye.
 glasses_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye_tree_eyeglasses.xml")
 
 # Initialize video capture
-video_capture = cv2.VideoCapture(0)
+rtsp_url = "rtsp://username:password@camera_ip:port/stream"
+video_capture = cv2.VideoCapture(rtsp_url)
+
 
 # Flag and lock to control the video feed
 stop_video_feed = threading.Event()
