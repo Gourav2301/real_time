@@ -3,3 +3,4 @@ uvicorn[standard]  # or `uvicorn` if you prefer the minimal install
 gunicorn
 opencv-python-headless
 numpy
+python-multipart
